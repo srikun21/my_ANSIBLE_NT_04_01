@@ -1,0 +1,25 @@
+---
+ mystudents:
+  - name: srikanth
+    phno: 7978288528
+    email: sri@gmail
+    addresh:
+        street: 1
+        doorno: 222
+        pin: 500072
+
+  - name: sravanti
+    phno: 678905343
+    email: sravan@gmail.com
+    address: 
+        street: 1
+        doorno: 222
+        pin: 500072
+  
+  - name: ravi
+    phno: 789065430
+    email: ravi@gmail.com
+    address: 
+        street: 1
+        doorno: 222
+        pin: 500072
