@@ -3,11 +3,10 @@
   become: yes
   tasks: 
   - name: i want to install git
-    apt:
-      name: foo
+    apt: 
+      name: git 
       state: present
-  - name: i want install tree
+  - name: i want to install tree
     apt: 
       name: tree
       state: present
-       
