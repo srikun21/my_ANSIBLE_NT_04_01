@@ -1,6 +1,7 @@
 ---
 - hosts: all
   become: yes
+  gather_facts: yes
   tasks: 
   - name: i want to install git
     apt: 
@@ -10,3 +11,7 @@
     apt: 
       name: tree
       state: present
+
+  - name: i want to install webserver
+    apt:
+      name: apache2
