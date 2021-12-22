@@ -4,7 +4,7 @@
   tasks: 
   - name: i want to install web server on ubuntu16 nodes
     apt: 
-      name: install git 
+      name: install apache2
       state: present
     when: ansible_os_family =="Debian"
   - name: i want to start webserver on ubuntu16 nodes
