@@ -1,9 +1,16 @@
 ---
-- hosts: all
+- hosts: 172.31.19.153
   become: yes
-  tasks:
-- name: i want to install web server on ubuntu16 node
-  apt:
-    name: apache2
-    state: present
+  tasks: 
+  - name: i want to install web server on ubuntu16 nodes
+    apt: 
+      name: install git 
+      state: present
     when: ansible_os_family =="Debian"
+  - name: i want to start webserver on ubuntu16 nodes
+    service: 
+       name: install tree
+       state: started
+    when: ansible_os_family =="Debian"
+
+ 
